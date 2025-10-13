@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on My New Hugo Site</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Oct 2025 09:48:23 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/posts/about/</link>
+      <pubDate>Mon, 13 Oct 2025 09:48:23 -0400</pubDate>
+      <guid>http://localhost:1313/posts/about/</guid>
+      <description>&lt;h1 id=&#34;ryan-mitchell&#34;&gt;Ryan Mitchell&lt;/h1&gt;&#xA;&lt;h2 id=&#34;about-me&#34;&gt;About Me&lt;/h2&gt;&#xA;&lt;h3 id=&#34;heading&#34;&gt;&lt;/h3&gt;&#xA;&lt;p&gt;Helllo! My name is Ryan Mitchell. I am a US Army logistician and project manager with 12 years of experience from the tactical level leading maintenance programs and resupply convoys to the institutional level managing techincal requirements for counter unmanned aerial systems.&lt;/p&gt;&#xA;&lt;p&gt;I am planning a transition to a career in technology over the next year to better match my family&amp;rsquo;s and my goals. Despite planning to leave the service, I want to use my talents to continue to support the warfighter. In my experience a better tool was always available, but just out of reach due to DoD, service, or unit policies. This leaves the warfighter either unable to bring in the latest technology or scrambling to find complicated work arounds that would break at the first change.  I hope to use this blog to share what I have learned and the projects I build along the way as I work torwards supporting the warfighter once again.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
