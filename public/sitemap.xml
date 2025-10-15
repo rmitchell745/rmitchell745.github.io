@@ -5,10 +5,10 @@
     <loc>http://localhost:1313/</loc>
     <lastmod>2025-10-13T09:48:23-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/about/</loc>
+    <loc>http://localhost:1313/page/about/</loc>
     <lastmod>2025-10-13T09:48:23-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://localhost:1313/page/</loc>
     <lastmod>2025-10-13T09:48:23-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/example/</loc>
@@ -68,10 +68,6 @@
     <loc>http://localhost:1313/post/2015-01-04-first-post/</loc>
     <lastmod>2015-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/page/about/</loc>
-  </url><url>
     <loc>http://localhost:1313/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/page/</loc>
   </url>
 </urlset>

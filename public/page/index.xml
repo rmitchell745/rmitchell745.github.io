@@ -8,13 +8,14 @@
     <language>en</language>
     <managingEditor>youremail@domain.com (Some Person)</managingEditor>
     <webMaster>youremail@domain.com (Some Person)</webMaster>
+    <lastBuildDate>Mon, 13 Oct 2025 09:48:23 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>About me</title>
+      <title>About</title>
       <link>http://localhost:1313/page/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>youremail@domain.com (Some Person)</author>
+      <pubDate>Mon, 13 Oct 2025 09:48:23 -0400</pubDate><author>youremail@domain.com (Some Person)</author>
       <guid>http://localhost:1313/page/about/</guid>
-      <description>&lt;p&gt;My name is Inigo Montoya. I have the following qualities:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;I rock a great mustache&lt;/li&gt;&#xA;&lt;li&gt;I&amp;rsquo;m extremely loyal to my family&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;What else do you need?&lt;/p&gt;&#xA;&lt;h3 id=&#34;my-history&#34;&gt;my history&lt;/h3&gt;&#xA;&lt;p&gt;To be honest, I&amp;rsquo;m having some trouble remembering right now, so why don&amp;rsquo;t you just watch &lt;a href=&#34;https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29&#34;&gt;my movie&lt;/a&gt; and it will answer &lt;strong&gt;all&lt;/strong&gt; your questions.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;ryan-mitchell&#34;&gt;Ryan Mitchell&lt;/h1&gt;&#xA;&lt;h2 id=&#34;about-me&#34;&gt;About Me&lt;/h2&gt;&#xA;&lt;h3 id=&#34;heading&#34;&gt;&lt;/h3&gt;&#xA;&lt;p&gt;Helllo! My name is Ryan Mitchell. I am a US Army logistician and project manager with 12 years of experience from the tactical level leading maintenance programs and resupply convoys to the institutional level managing techincal requirements for counter unmanned aerial systems.&lt;/p&gt;&#xA;&lt;p&gt;I am planning a transition to a career in technology over the next year to better match my family&amp;rsquo;s and my goals. Despite planning to leave the service, I want to use my talents to continue to support the warfighter. In my experience a better tool was always available, but just out of reach due to DoD, service, or unit policies. This leaves the warfighter either unable to bring in the latest technology or scrambling to find complicated work arounds that would break at the first change.  I hope to use this blog to share what I have learned and the projects I build along the way as I work torwards supporting the warfighter once again.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
