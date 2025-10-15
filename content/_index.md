@@ -1,2 +1,17 @@
-## Front Page Content
-`beautifulhugo` supports content on your front page. Edit `/content/_index.md` to change what appears here. Delete `/content/_index.md` if you don't want any content here.
+# Welcome!
+I'm Ryan Mitchell, a husband to a current law student, father of two, and currently an active duty Army officer. I'm preparing myself for an eventual transition to the civillian world and a career in the tech industry. 
+
+
+## [About Me](page/about)
+
+
+
+
+## [Posts](/posts)
+
+Recent Posts: 
+
+1- [date]
+2- [date]
+
+## Projects
