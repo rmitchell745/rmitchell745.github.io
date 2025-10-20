@@ -20,7 +20,7 @@ pygmentsCodefencesGuessSyntax = true
 
 [Params]
 #  homeTitle = "Beautiful Hugo Theme" # Set a different text for the header on the home page
-  subtitle = "from distributing ammo to distributing software"
+  subtitle = "From Delivering Ammo to Delivering Software"
   mainSections = ["post","posts"]
   logo = "/assets/Ryan.png" # Expecting square dimensions
   favicon = "/assets/RYAN_FVICON.png"
@@ -98,26 +98,26 @@ pygmentsCodefencesGuessSyntax = true
     weight = 3
 
 [[menu.main]]
-    identifier = "samples"
-    name = "Samples"
+    identifier = "Projects"
+    name = "Projects"
     weight = 2
 
 [[menu.main]]
-    parent = "samples"
-    name = "Big Image Sample"
-    url = "post/2017-03-07-bigimg-sample"
+    parent = "Projects"
+    name = "Home Lab"
+    url = ""
     weight = 1
 
 [[menu.main]]
-    parent = "samples"
-    name = "Math Sample"
-    url = "post/2017-03-05-math-sample"
+    parent = "Projects"
+    name = "Weather Notification App"
+    url = ""
     weight = 2
 
 [[menu.main]]
-    parent = "samples"
-    name = "Code Sample"
-    url = "post/2016-03-08-code-sample"
+    parent = "Projects"
+    name = "Sample"
+    url = ""
     weight = 3
 
 [[menu.main]]

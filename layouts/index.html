@@ -2,13 +2,42 @@
   <div role="main" class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
         {{ with .Content }}
           <div class="well">
-            {{.}}
+            {{ . }}
           </div>
         {{ end }}
 
-               {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
+        <!-- Recent Posts Section -->
+        <section id="recent-posts">
+          <h2>Recent Posts</h2>
+          <ul class="post-list">
+            {{ range first 5 (where .Site.RegularPages "Section" "posts") }}
+              <li>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                <small> — {{ .Date.Format "Jan 2, 2006" }}</small>
+                <p>{{ .Summary }}</p>
+              </li>
+            {{ end }}
+          </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+          <h2>Current Projects</h2>
+          <ul class="project-list">
+            {{ range first 4 (where .Site.RegularPages "Section" "projects") }}
+              <li>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                <p>{{ .Params.summary }}</p>
+              </li>
+            {{ end }}
+          </ul>
+        </section>
+
+        <!-- Paginator (optional if you have list pages) -->
+        {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
           <ul class="pager main-pager">
             {{ if .Paginator.HasPrev }}
               <li class="previous">
@@ -22,6 +51,7 @@
             {{ end }}
           </ul>
         {{ end }}
+
       </div>
     </div>
   </div>
