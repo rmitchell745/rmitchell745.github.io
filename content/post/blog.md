@@ -1,9 +1,9 @@
 +++
-draft: false
-title: "Starting My Homelab and Automating a Hugo Blog"
-date: 2025-10-18
-description: "How I set up a Fedora server, automated deployments, and launched a Hugo-based blog to document my DevOps journey."
-tags: ["homelab", "hugo", "blog", "automation", "devops", "self-hosting"]
+draft = false
+title = "Starting My Homelab and Automating a Hugo Blog"
+date = 2025-10-18
+description = "How I set up a Fedora server, automated deployments, and launched a Hugo-based blog to document my DevOps journey."
+tags = ["homelab", "hugo", "blog", "automation", "devops", "self-hosting"]
 +++
 
 # Starting My Homelab and Automating a Hugo Blog
