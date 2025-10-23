@@ -13,7 +13,7 @@
         <section id="recent-posts">
           <h2>Recent Posts</h2>
           <ul class="post-list">
-            {{ range first 5 (where .Site.RegularPages "Section" "posts") }}
+            {{ range first 5 (where .Site.RegularPages "Section" "post") }}
               <li>
                 <a href="{{ .RelPermalink }}">{{ .Title }}</a>
                 <small> — {{ .Date.Format "Jan 2, 2006" }}</small>
