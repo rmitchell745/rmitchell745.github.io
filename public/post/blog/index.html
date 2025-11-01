@@ -12,8 +12,9 @@
  
 
 
-      <title>Pages - </title>
+      <title>Starting My Homelab and Automating a Hugo Blog - </title>
 
+  <meta name="description" content="How I set up a Fedora server, automated deployments, and launched a Hugo-based blog to document my DevOps journey.">
   <meta name="author" content="Ryan Mitchell"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -34,14 +35,65 @@
   
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "http:\/\/localhost:1313\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "http:\/\/localhost:1313\/post\/blog\/",
+          "name": "Starting my homelab and automating a hugo blog"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Ryan Mitchell"
+  },
+  "headline": "Starting My Homelab and Automating a Hugo Blog",
+  "description" : "How I set up a Fedora server, automated deployments, and launched a Hugo-based blog to document my DevOps journey.",
+  "inLanguage" : "en",
+  "wordCount":  507 ,
+  "datePublished" : "2025-10-18T00:00:00\u002b00:00",
+  "dateModified" : "2025-10-18T00:00:00\u002b00:00",
+  "image" : "http:\/\/localhost:1313\/assets\/Ryan.png",
+  "keywords" : [ "homelab, hugo, blog, automation, devops, self-hosting" ],
+  "mainEntityOfPage" : "http:\/\/localhost:1313\/post\/blog\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "http:\/\/localhost:1313\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "http:\/\/localhost:1313\/assets\/Ryan.png",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
 
-<meta property="og:title" content="Pages" />
+
+<meta property="og:title" content="Starting My Homelab and Automating a Hugo Blog" />
+<meta property="og:description" content="How I set up a Fedora server, automated deployments, and launched a Hugo-based blog to document my DevOps journey.">
 <meta property="og:image" content="http://localhost:1313/assets/Ryan.png" />
-<meta property="og:url" content="http://localhost:1313/page/" />
+<meta property="og:url" content="http://localhost:1313/post/blog/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Ryan Mitchell" />
 
-  <meta name="twitter:title" content="Pages" />
+  <meta name="twitter:title" content="Starting My Homelab and Automating a Hugo Blog" />
+  <meta name="twitter:description" content="How I set up a Fedora server, automated deployments, and launched a Hugo-based blog to document my DevOps journey.">
   <meta name="twitter:image" content="http://localhost:1313/assets/Ryan.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@username" />
@@ -196,14 +248,33 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="page-heading">
+            <div class="post-heading">
               
-                <h1>Pages</h1>
-              
-              
-                <hr class="small">
+                <h1>Starting My Homelab and Automating a Hugo Blog</h1>
               
               
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on October 18, 2025
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;minutes
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;507&nbsp;words
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Ryan Mitchell
+    
+  
+  
+</span>
+
+
               
             </div>
           </div>
@@ -215,72 +286,202 @@
 
 
     
-  <div class="container" role="main">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        
-        <div class="posts-list">
-          
-            <article class="post-preview">
-    <a href="http://localhost:1313/page/about/">
-        <h2 class="post-title">About</h2>
-        
-        
-        
-    </a>
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <h1 id="starting-my-homelab-and-automating-a-hugo-blog">Starting My Homelab and Automating a Hugo Blog</h1>
+<h2 id="tldr">TL;DR</h2>
+<p>Set up a Fedora-based home server, configured GitHub Actions for CI/CD with Hugo, and launched a live technical blog to document my DevOps and automation projects.</p>
+<p><strong>Live Site:</strong> <a href="https://rmitchell745.github.io">rmitchell745.github.io</a><br>
+<strong>Stack:</strong> Fedora Server, Hugo, GitHub Actions, YAML, Git, Markdown</p>
+<hr>
+<h2 id="introduction">Introduction</h2>
+<p>I’ve always been the techie person in the room when one wasn’t available. As I began planning a career change, I needed a way to <strong>showcase my technical skills</strong> in a real, hands-on way.</p>
+<p>That led me to build a <strong>home lab</strong> and <strong>technical blog</strong> — both as a way to learn DevOps practices and as a platform to document my projects. The first challenge: get this blog built and continuously deployed.</p>
+<p>Next up: developing and self-hosting my first application — a weather notification service.</p>
+<hr>
+<h2 id="setup-and-configuration">Setup and Configuration</h2>
+<p>I started by digging out an old ThinkPad laptop, pulling the family photos off it, and researching Linux distributions.</p>
+<p>I wanted a <strong>Red Hat-based distribution</strong> to align with enterprise environments, so I initially chose <strong>CentOS Stream</strong> for its stability between update cycles. Unfortunately, the hardware was too outdated for CentOS — a good reminder that enterprise distros assume newer infrastructure.</p>
+<p>I pivoted to <strong>Fedora Server</strong>, which offers excellent hardware compatibility for personal and older systems.</p>
+<p>Once installed, I added:</p>
+<ul>
+<li><strong>Git</strong></li>
+<li><strong>Hugo</strong></li>
+<li><strong>Neovim</strong></li>
+</ul>
+<p>…and got to work setting up my blog directly on the machine.</p>
+<blockquote>
+<p><em>Image of ThinkPad here</em></p>
+</blockquote>
+<hr>
+<h2 id="blog-automation-with-hugo">Blog Automation with Hugo</h2>
+<p>After comparing options, I chose <strong>Hugo</strong> because it’s fast, fully open-source, and highly customizable via Markdown and simple configuration files.</p>
+<p>Hugo also has strong <strong>GitHub Actions integration</strong>, making it ideal for a command-line and CI/CD-focused workflow.</p>
+<p>Here’s the flow I set up:</p>
+<ol>
+<li>Initialized a Hugo directory on the server.</li>
+<li>Created a Git repository and pushed to GitHub.</li>
+<li>Configured <strong>GitHub Actions</strong> for automated builds and deployment to <strong>GitHub Pages</strong>.</li>
+</ol>
+<p>I hit some early 404 and 403 issues, which I traced to repository settings — GitHub Pages must be configured to build from the correct branch. Once fixed, my site went live successfully.</p>
+<blockquote>
+<p><em>Screenshot of GitHub Pages and Actions tab here</em></p>
+</blockquote>
+<hr>
+<h2 id="reflection">Reflection</h2>
+<p>After completing this first project, I can confidently say it’s an <strong>excellent introduction to DevOps</strong>.</p>
+<p>Running on real hardware instead of a virtual machine gives you exposure to hardware compatibility, networking, and boot troubleshooting.</p>
+<p>Working with <strong>Hugo</strong> and <strong>GitHub Actions</strong> provides early, meaningful experience with:</p>
+<ul>
+<li>YAML syntax in automation contexts</li>
+<li>Version control workflows</li>
+<li>Continuous deployment pipelines</li>
+</ul>
+<p>And the repetition of committing, pushing, and triggering builds reinforces a solid Git workflow muscle memory.</p>
+<hr>
+<h2 id="skills-practiced">Skills Practiced</h2>
+<ul>
+<li>Linux server setup and configuration</li>
+<li>YAML syntax and GitHub Actions automation</li>
+<li>Git and version control workflow</li>
+<li>CI/CD pipeline management</li>
+<li>Troubleshooting build environments</li>
+<li>Markdown documentation</li>
+</ul>
+<hr>
+<h2 id="results">Results</h2>
+<ul>
+<li>Hugo site successfully deployed and hosted</li>
+<li>Dynamic content structure for posts, projects, and home page</li>
+<li>Working automated workflow from local to GitHub Pages</li>
+</ul>
+<hr>
+<h2 id="future-steps">Future Steps</h2>
+<ul>
+<li>Point domain (<code>rmitchell.tech</code>) to the live blog</li>
+<li>Add project pages with dynamic post listings</li>
+<li>Automate syncs from dev VM to the live server</li>
+</ul>
+<hr>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="https://gohugo.io/documentation/">Hugo Documentation</a></li>
+<li><a href="https://docs.github.com/en/actions">GitHub Actions Guide</a></li>
+<li><a href="https://docs.fedoraproject.org/en-US/fedora-server/">Fedora Server Docs</a></li>
+<li><a href="https://wiki.archlinux.org/title/Main_page">Arch Linux Wiki</a></li>
+</ul>
 
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on October 13, 2025
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;162&nbsp;words
-  
-  
-    
-      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Ryan Mitchell
-    
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
         
-        <h1 id="ryan-mitchell">Ryan Mitchell</h1>
-<h2 id="about-me">About Me</h2>
-<h3 id="heading"></h3>
-<p>Helllo! My name is Ryan Mitchell. I am a US Army logistician and project manager with 12 years of experience from the tactical level leading maintenance programs and resupply convoys to the institutional level managing techincal requirements for counter unmanned aerial systems.</p>
-<p>I am planning a transition to a career in technology over the next year to better match my family&rsquo;s and my goals. Despite planning to leave the service, I want to use my talents to continue to support the warfighter. In my experience a better tool was always available, but just out of reach due to DoD, service, or unit policies. This leaves the warfighter either unable to bring in the latest technology or scrambling to find complicated work arounds that would break at the first change.  I hope to use this blog to share what I have learned and the projects I build along the way as I work torwards supporting the warfighter once again.</p>
-        <a href="http://localhost:1313/page/about/" class="post-read-more">[Read More]</a>
+          <div class="blog-tags">
+            
+              
+              <a href="http://localhost:1313/tags/homelab/">homelab</a>&nbsp;
+            
+              
+              <a href="http://localhost:1313/tags/hugo/">hugo</a>&nbsp;
+            
+              
+              <a href="http://localhost:1313/tags/blog/">blog</a>&nbsp;
+            
+              
+              <a href="http://localhost:1313/tags/automation/">automation</a>&nbsp;
+            
+              
+              <a href="http://localhost:1313/tags/devops/">devops</a>&nbsp;
+            
+              
+              <a href="http://localhost:1313/tags/self-hosting/">self-hosting</a>&nbsp;
+            
+          </div>
         
-    </div>
 
-    
-
-</article>
-          
-        </div>
         
-      </div>
-    </div>
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                
+
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      
+      <li>
+        <a href="//twitter.com/share?url=http%3a%2f%2flocalhost%3a1313%2fpost%2fblog%2f&amp;text=Starting%20My%20Homelab%20and%20Automating%20a%20Hugo%20Blog&amp;via=username" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2fblog%2f" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fpost%2fblog%2f&amp;title=Starting%20My%20Homelab%20and%20Automating%20a%20Hugo%20Blog" target="_blank" title="Share on Reddit">
+          <i class="fab fa-reddit"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fpost%2fblog%2f&amp;title=Starting%20My%20Homelab%20and%20Automating%20a%20Hugo%20Blog" target="_blank" title="Share on LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.stumbleupon.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fpost%2fblog%2f&amp;title=Starting%20My%20Homelab%20and%20Automating%20a%20Hugo%20Blog" target="_blank" title="Share on StumbleUpon">
+          <i class="fab fa-stumbleupon"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fpost%2fblog%2f&amp;description=Starting%20My%20Homelab%20and%20Automating%20a%20Hugo%20Blog" target="_blank" title="Share on Pinterest">
+          <i class="fab fa-pinterest"></i>
+        </a>
+      </li>
+    </ul>
   </div>
+  
+
+              </div>
+            </section>
+        
+
+        
+          
+
+          
+        
+      </article>
 
       
-    <div class="page-meta">
-  
-  
-  
+        <ul class="pager blog-pager">
+          
+          
+        </ul>
+      
+
+
+      
+      
+      
+      
+      
+        
+      
+
+    </div>
+  </div>
 </div>
 
-
-  <footer>
+      <footer>
   <div class="container">
     
     <div class="row">
@@ -598,15 +799,6 @@
                 </a>
               </li>
           
-          
-          <li>
-            <a href="/page/index.xml" title="RSS">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
           
           
         </ul>
