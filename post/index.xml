@@ -2,4 +2,11 @@
 &lt;h2 id="tldr"&gt;TL;DR&lt;/h2&gt;
 &lt;p&gt;Set up a Fedora-based home server, configured GitHub Actions for CI/CD with Hugo, and launched a live technical blog to document my DevOps and automation projects.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Live Site:&lt;/strong&gt; &lt;a href="https://rmitchell745.github.io"&gt;rmitchell745.github.io&lt;/a&gt;&lt;br&gt;
-&lt;strong&gt;Stack:&lt;/strong&gt; Fedora Server, Hugo, GitHub Actions, YAML, Git, Markdown&lt;/p&gt;</description></item></channel></rss>
+&lt;strong&gt;Stack:&lt;/strong&gt; Fedora Server, Hugo, GitHub Actions, YAML, Git, Markdown&lt;/p&gt;</description></item><item><title/><link>https://rmitchell745.github.io/post/weather_notification_app/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>youremail@domain.com (Ryan Mitchell)</author><guid>https://rmitchell745.github.io/post/weather_notification_app/</guid><description>&lt;p&gt;+++&lt;br&gt;
+title = &amp;ldquo;Building a Python Weather Notification App: Lessons in Automation, APIs, and DevOps&amp;rdquo;&lt;br&gt;
+date = 2025-10-27&lt;br&gt;
+description = &amp;ldquo;A look at how I built and automated a weather alert app that delivers daily forecasts via email-to-MMS using Python, YAML configs, and cron jobs.&amp;rdquo;&lt;br&gt;
+tags = [&amp;ldquo;python&amp;rdquo;, &amp;ldquo;automation&amp;rdquo;, &amp;ldquo;devops&amp;rdquo;, &amp;ldquo;weather-app&amp;rdquo;, &amp;ldquo;api&amp;rdquo;, &amp;ldquo;smtp&amp;rdquo;]&lt;br&gt;
+draft = false&lt;br&gt;
++++&lt;/p&gt;
+&lt;p&gt;# Building a Python Weather Notification App: Lessons in Automation, APIs, and DevOps&lt;/p&gt;</description></item></channel></rss>
