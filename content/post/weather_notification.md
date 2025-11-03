@@ -35,9 +35,9 @@ This project helped reinforce my DevOps workflow habits — Git, automation, con
 ## Architecture Overview
 
 
-"""
+'''
 [Config YAML] → [Weather Module] → [Email Module] → [Logger] → [Cron Job / Docker]
-"""
+'''
 
 
 **Core components:**
@@ -64,12 +64,12 @@ I established the API keys as persistent environment variable in .bashrc and eve
 I sourced my .bashrc file in crontab to access the environment variables defined there to support automation.  I plan to use a ‘.env’  document as I move to containerization. 
 
 
-“””
+'''
 #add to the beginning of cron job in crontab
 
 
 . $HOME/.bashrc;
-“””
+'''
 
 
 ---
@@ -98,23 +98,22 @@ Long messages with multiple zip codes were getting clipped or lost. I initially 
 It was a simple fix switch to the carrier’s mms gateway and the truncation issues were fixed. 
 
 
-“””
+'''
 #from 
 "Verizon": "vtext.com",
 
 
 #to
 "Verizon": "vzwpix.com",
+'''
 
-
-“””
 ---
 
 
 ## Example MMS Mesasge
 
 
-“””
+'''
 Hello Ryan,
 
 
@@ -133,7 +132,7 @@ Date: 2025-10-27
  - 03:00: Temp: 45.5°F | Clouds - broken clouds
  - 06:00: Temp: 45.3°F | Clouds - broken clouds
  - 09:00: Temp: 44.3°F | Clouds - broken clouds
-“””
+'''
 
 
 ---
@@ -168,5 +167,4 @@ Every time the app failed silently or logged nothing, I needed to tighten my app
 - [OpenWeather API Docs](https://openweathermap.org/forecast5) 
 - [Python smtplib Docs](https://docs.python.org/3/library/smtplib.html)
 - [Python Logging Tutorial](https://docs.python.org/3/howto/logging.html#logging-basic-tutorial)
-- [Arch Linux Forums]()
 - [Cron Environment Variables - stack overflow discussion](https://stackoverflow.com/questions/2229825/where-can-i-set-environment-variables-that-crontab-will-use)
