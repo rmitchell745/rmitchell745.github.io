@@ -35,11 +35,11 @@ This project helped reinforce my DevOps workflow habits — Git, automation, con
 ## Architecture Overview
 
 
-'''
+```
+
 [Config YAML] → [Weather Module] → [Email Module] → [Logger] → [Cron Job / Docker]
-'''
 
-
+```
 **Core components:**
 - **config.yml** – Stores user info (zip codes, phone numbers, carriers, email credentials).  
 - **weather.py** – Pulls weather data from OpenWeather’s 5-day/3-hour forecast API.  
@@ -64,12 +64,14 @@ I established the API keys as persistent environment variable in .bashrc and eve
 I sourced my .bashrc file in crontab to access the environment variables defined there to support automation.  I plan to use a ‘.env’  document as I move to containerization. 
 
 
-'''
+```
+
 #add to the beginning of cron job in crontab
 
 
 . $HOME/.bashrc;
-'''
+
+```
 
 
 ---
@@ -79,14 +81,16 @@ I sourced my .bashrc file in crontab to access the environment variables defined
 I initially used relative paths to both the configuration file and the logger output, both of which were broken when the script was run in the cron environment. The fix to this was relatively easy, and was able to be done modularly using the “__file__”   variable in python with the OS module to return absolute paths to the file even if the project structure moves. 
 
 
-“””
+```
+
 #from
 cwd = os.getcwd() #returned a different directory when run by cron, or even when run outside the project root
 config_path = os.path.join(cwd,"Config",'weather_config.yml')
 #to
 cwd = os.path.dirname(os.path.abspath(__file__))
 config_path = os.path.join(cwd,"Config",'weather_config.yml')
-“””
+
+```
 ---
 
 
@@ -98,14 +102,16 @@ Long messages with multiple zip codes were getting clipped or lost. I initially 
 It was a simple fix switch to the carrier’s mms gateway and the truncation issues were fixed. 
 
 
-'''
+```
+
 #from 
 "Verizon": "vtext.com",
 
 
 #to
 "Verizon": "vzwpix.com",
-'''
+```
+
 
 ---
 
@@ -113,7 +119,8 @@ It was a simple fix switch to the carrier’s mms gateway and the truncation iss
 ## Example MMS Mesasge
 
 
-'''
+```
+
 Hello Ryan,
 
 
@@ -132,7 +139,8 @@ Date: 2025-10-27
  - 03:00: Temp: 45.5°F | Clouds - broken clouds
  - 06:00: Temp: 45.3°F | Clouds - broken clouds
  - 09:00: Temp: 44.3°F | Clouds - broken clouds
-'''
+```
+
 
 
 ---
