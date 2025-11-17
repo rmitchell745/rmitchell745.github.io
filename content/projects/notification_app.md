@@ -30,7 +30,7 @@ graph TD
     E --> C[Logger]
     E --> D[Email Sender]
     B --> E[Main Script]
-{{</mermaid>}}
+{{</ mermaid >}}
 
 
 
