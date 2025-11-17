@@ -9,7 +9,7 @@
 &lt;/ul&gt;
 &lt;div class="mermaid"&gt;
 
-graph TD
+graph TD;
  A[OpenWeather API] --&gt; B[Weather Script]
  E --&gt; C[Logger]
  E --&gt; D[Email Sender]
