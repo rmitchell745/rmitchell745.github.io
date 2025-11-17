@@ -17,6 +17,8 @@ pygmentsCodefencesGuessSyntax = true
     # Shortname = "XXX"
   [Services.googleAnalytics]
     # id = "XXX"
+[markup.goldmark.renderer]
+  unsafe = true
 
 [Params]
 #  homeTitle = "Beautiful Hugo Theme" # Set a different text for the header on the home page
@@ -57,35 +59,35 @@ pygmentsCodefencesGuessSyntax = true
   website = "yourwebsite.com"
   email = "youremail@domain.com"
   facebook = "username"
-  github = "username"
+  github = "rmitchell745"
   gitlab = "username"
-  bitbucket = "username"
-  twitter = "username"
-  reddit = "username"
+# bitbucket = "username"
+# twitter = "username"
+# reddit = "username"
   linkedin = "username"
-  xing = "username"
-  stackoverflow = "users/XXXXXXX/username"
-  snapchat = "username"
-  instagram = "username"
-  youtube = "user/username" # or channel/channelname
-  soundcloud = "username"
-  spotify = "username"
-  bandcamp = "username"
-  itchio = "username"
-  vk = "username"
-  paypal = "username"
-  telegram = "username"
-  500px = "username"
-  codepen = "username"
-  mastodon = "url"
-  kaggle = "username"
-  weibo = "username"
-  slack = "username"
-  medium = "username"
-  discord = "invite code (https://discord.gg/XXXXXXX)"
-  strava = "userid"
-  lastfm = "username"
-  bluesky = "username"
+# xing = "username"
+# stackoverflow = "users/XXXXXXX/username"
+# snapchat = "username"
+# instagram = "username"
+# youtube = "user/username" # or channel/channelname
+# soundcloud = "username"
+# spotify = "username"
+# bandcamp = "username"
+# itchio = "username"
+# vk = "username"
+# paypal = "username"
+# telegram = "username"
+#  500px = "username"
+ codepen = "username"
+# mastodon = "url"
+# kaggle = "username"
+# weibo = "username"
+# slack = "username"
+# medium = "username"
+# discord = "invite code (https://discord.gg/XXXXXXX)"
+#  strava = "userid"
+# lastfm = "username"
+# bluesky = "username"
 
 [[menu.main]]
     name = "Blog"
@@ -110,8 +112,8 @@ pygmentsCodefencesGuessSyntax = true
 
 [[menu.main]]
     parent = "Projects"
-    name = "Weather Notification App"
-    url = ""
+    name = "Notification App"
+    url = "projects/notification_app"
     weight = 2
 
 [[menu.main]]

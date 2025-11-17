@@ -1,0 +1,34 @@
+{{ define "main" }}
+  <article class="project">
+    <header>
+      <h1>{{ .Title }}</h1>
+      <p class="date">{{ .Date.Format "Jan 2, 2006" }}</p>
+      {{ with .Params.tldr }}
+        <p class="tldr">{{ . }}</p>
+      {{ end }}
+    </header>
+
+
+    {{ partial "project-architecture.html" . }}
+
+
+    <section class="content">
+      {{ .Content }}
+    </section>
+
+    <section class="related-posts">
+      <h2>Related Posts</h2>
+      <ul>
+      {{ $current := . }}
+      {{ $related := where site.RegularPages "Section" "projects" | intersect (where site.RegularPages "Params.tags" "intersect" $current.Params.tags) }}
+      {{ range first 4 $related }}
+    <div class="related-project">
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </div>
+{{ end }}
+  
+      </ul>
+    </section>
+  </article>
+{{ end }}
+

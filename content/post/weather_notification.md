@@ -64,7 +64,7 @@ I established the API keys as persistent environment variable in .bashrc and eve
 I sourced my .bashrc file in crontab to access the environment variables defined there to support automation.  I plan to use a ‘.env’  document as I move to containerization. 
 
 
-```
+```bash
 
 #add to the beginning of cron job in crontab
 
@@ -81,7 +81,7 @@ I sourced my .bashrc file in crontab to access the environment variables defined
 I initially used relative paths to both the configuration file and the logger output, both of which were broken when the script was run in the cron environment. The fix to this was relatively easy, and was able to be done modularly using the “__file__”   variable in python with the OS module to return absolute paths to the file even if the project structure moves. 
 
 
-```
+```python
 
 #from
 cwd = os.getcwd() #returned a different directory when run by cron, or even when run outside the project root
@@ -102,7 +102,7 @@ Long messages with multiple zip codes were getting clipped or lost. I initially 
 It was a simple fix switch to the carrier’s mms gateway and the truncation issues were fixed. 
 
 
-```
+```python
 
 #from 
 "Verizon": "vtext.com",

@@ -1,0 +1,12 @@
+{{/* layouts/partials/project-architecture.html */}}
+{{ with .Params.architecture }}
+  <section id="architecture">
+    <h2>System Architecture</h2>
+    <div class="mermaid">
+{{ . | safeHTML }}
+    </div>
+  </section>
+{{ else }}
+  <p><em>No architecture diagram provided.</em></p>
+{{ end }}
+
