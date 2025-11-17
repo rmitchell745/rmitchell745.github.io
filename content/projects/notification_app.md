@@ -25,7 +25,7 @@ The **Weather Notification App** is a Python-based automation tool that retrieve
 - Sends daily emails with concise weather summaries  
 
 {{< mermaid >}}
-graph TD
+graph TD;
     A[OpenWeather API] --> B[Weather Script]
     E --> C[Logger]
     E --> D[Email Sender]
