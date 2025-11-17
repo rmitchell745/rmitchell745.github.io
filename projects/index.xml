@@ -7,10 +7,12 @@
 &lt;li&gt;Scheduled via cron, compatible with containerized deployments&lt;/li&gt;
 &lt;li&gt;Sends daily emails with concise weather summaries&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;graph TD
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; A[OpenWeather API] --&amp;gt; B[Weather Script]
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; E --&amp;gt; C[Logger]
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; E --&amp;gt; D[Email Sender]
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; B --&amp;gt; E[Main Script]
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item></channel></rss>
+&lt;div class="mermaid"&gt;
+
+graph TD
+ A[OpenWeather API] --&gt; B[Weather Script]
+ E --&gt; C[Logger]
+ E --&gt; D[Email Sender]
+ B --&gt; E[Main Script]
+
+&lt;/div&gt;</description></item></channel></rss>
