@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects on Ryan Mitchell</title><link>https://rmitchell745.github.io/projects/</link><description>Recent content in Projects on Ryan Mitchell</description><generator>Hugo</generator><language>en</language><managingEditor>youremail@domain.com (Ryan Mitchell)</managingEditor><webMaster>youremail@domain.com (Ryan Mitchell)</webMaster><lastBuildDate>Mon, 27 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rmitchell745.github.io/projects/index.xml" rel="self" type="application/rss+xml"/><item><title>Notification App</title><link>https://rmitchell745.github.io/projects/notification_app/</link><pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate><author>youremail@domain.com (Ryan Mitchell)</author><guid>https://rmitchell745.github.io/projects/notification_app/</guid><description>&lt;h3 id="overview"&gt;Overview&lt;/h3&gt;
+&lt;p&gt;The &lt;strong&gt;Weather Notification App&lt;/strong&gt; is a Python-based automation tool that retrieves upcoming forecasts and sends scheduled email alerts. It runs on your local server via cron jobs and uses a lightweight configuration file for flexible scheduling and city selection.&lt;/p&gt;
+&lt;h3 id="current-key-features"&gt;Current Key Features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Pulls forecasts from OpenWeather’s 3-hour endpoint&lt;/li&gt;
+&lt;li&gt;Custom logging system for local and Docker environments&lt;/li&gt;
+&lt;li&gt;Scheduled via cron, compatible with containerized deployments&lt;/li&gt;
+&lt;li&gt;Sends daily emails with concise weather summaries&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;graph TD
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; A[OpenWeather API] --&amp;gt; B[Weather Script]
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; E --&amp;gt; C[Logger]
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; E --&amp;gt; D[Email Sender]
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; B --&amp;gt; E[Main Script]
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item></channel></rss>
